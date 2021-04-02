@@ -9,8 +9,6 @@ import {
   faPlus
 } from '@fortawesome/free-solid-svg-icons'
 import { data } from '../../data'
-import RenderGalleryWidget from '../../helpers/RenderGalleryWidget'
-
 const CardFeaturedProduct = lazy(() =>
   import('../../components/card/CardFeaturedProduct')
 )
@@ -26,7 +24,6 @@ const ShippingReturns = lazy(() =>
   import('../../components/others/ShippingReturns')
 )
 const SizeChart = lazy(() => import('../../components/others/SizeChart'))
-
 class ProductDetailView extends Component {
   constructor (props) {
     super()
@@ -40,12 +37,35 @@ class ProductDetailView extends Component {
           <div className='col-md-8'>
             <div className='row mb-3'>
               <div className='col-md-5 text-center'>
-                <RenderGalleryWidget />
-
+                <img
+                  src='../../images/workshop/cldnry_fashion_pdp_basic_tee6.jpg'
+                  className='img-fluid mb-3'
+                  alt=''
+                />
+                <img
+                  src='../../images/workshop/cldnry_fashion_pdp_basic_tee6.jpg'
+                  className='border border-secondary mr-2' width='75'
+                  alt='...'
+                />
+                <img
+                  src='../../images/workshop/cldnry_fashion_pdp_basic_tee5.jpg'
+                  className='border border-secondary mr-2' width='75'
+                  alt='...'
+                />
+                <img
+                  src='../../images/workshop/cldnry_fashion_pdp_basic_tee4.jpg'
+                  className='border border-secondary mr-2' width='75'
+                  alt='...'
+                />
+                <img
+                  src='../../images/workshop/cldnry_fashion_pdp_basic_tee1.jpg'
+                  className='border border-secondary mr-2' width='75'
+                  alt='...'
+                />
               </div>
               <div className='col-md-7'>
                 <h1 className='h5 d-inline mr-2'>
-                  Great product name goes here - or does it?
+                  Great product name goes here
                 </h1>
                 <span className='badge bg-success mr-2'>New</span>
                 <span className='badge bg-danger mr-2'>Hot</span>

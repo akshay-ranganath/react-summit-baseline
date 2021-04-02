@@ -1,6 +1,5 @@
 import React from 'react'
 import { Video, CloudinaryContext } from 'cloudinary-react'
-import { Link } from 'react-router-dom'
 
 const Item = ({ item, index }) => (
   <div className={`carousel-item ${index === 0 ? 'active' : ''}`}>

@@ -1,6 +1,5 @@
 import React, { lazy, Component } from "react";
 import { Link } from "react-router-dom";
-// import { link45, file, check2all } from "../npm/icon";
 import { data } from "../data";
 import { ReactComponent as IconLaptop } from "bootstrap-icons/icons/laptop.svg";
 import { ReactComponent as IconHeadset } from "bootstrap-icons/icons/headset.svg";
@@ -11,7 +10,6 @@ import { ReactComponent as IconHdd } from "bootstrap-icons/icons/hdd.svg";
 import { ReactComponent as IconUpcScan } from "bootstrap-icons/icons/upc-scan.svg";
 import { ReactComponent as IconTools } from "bootstrap-icons/icons/tools.svg";
 const Banner = lazy(() => import("../components/carousel/Banner"));
-const CardIcon = lazy(() => import("../components/card/CardIcon"));
 
 
 class HomeView extends Component {
@@ -26,36 +24,8 @@ class HomeView extends Component {
     IconTools: IconTools,
   };
 
-  render() {
-    const iconProducts = data.iconProducts;
-    const rows = [...Array(Math.ceil(iconProducts.length / 4))];
-    // chunk the products into the array of rows
-    const productRows = rows.map((row, idx) =>
-      iconProducts.slice(idx * 4, idx * 4 + 4)
-    );
-    // map the rows as div.row
-    const carouselContent = productRows.map((row, idx) => (
-      <div className={`carousel-item ${idx === 0 ? "active" : ""}`} key={idx}>
-        <div className="row g-3">
-          {row.map((product, idx) => {
-            const ProductImage = this.components[product.img];
-            return (
-              <div key={idx} className="col-md-3">
-                <CardIcon
-                  title={product.title}
-                  text={product.text}
-                  tips={product.tips}
-                  to={product.to}
-                >
-                  <ProductImage className={product.cssClass} />
-                </CardIcon>
-              </div>
-            );
-          })}
-        </div>
-      </div>
-    ));
-
+  render() {    
+    
     return (
       <React.Fragment>
         <Banner className="mb-3" id="carouselHomeBanner" data={data.banner} />
