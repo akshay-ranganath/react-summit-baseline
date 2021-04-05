@@ -1,12 +1,12 @@
 import React from 'react'
-import { Video, CloudinaryContext } from 'cloudinary-react'
 
 const Item = ({ item, index }) => (
   <div className={`carousel-item ${index === 0 ? 'active' : ''}`}>
-    <CloudinaryContext cloudName='dbmataac4'>
-      <Video publicId='workshop/hero_video' id='bgvideo' muted autoPlay loop playsInline />
-    </CloudinaryContext>
 
+    <video id='bgvideo' muted autoPlay loop playsInline>
+      <source src='../images/workshop/Woman Picking Out Clothes.mp4' type='video/mp4' />
+  Your browser does not support the video tag.
+    </video>
   </div>
 )
 
