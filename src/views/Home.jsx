@@ -36,7 +36,7 @@ class HomeView extends Component {
             <div className="col-md-3">
               <Link to="/category" className="text-decoration-none">
                 <img
-                  src="https://res.cloudinary.com/dbmataac4/image/upload/v1616449232/workshop/pexels-the-lazy-artist-gallery-1300550.jpg"
+                  src="../images/workshop/pexels-the-lazy-artist-gallery-1300550.jpg"
                   className="img-fluid rounded-circle"
                   alt="..."
                 />
@@ -46,7 +46,7 @@ class HomeView extends Component {
             <div className="col-md-3">
               <Link to="/category" className="text-decoration-none">
                 <img
-                  src="https://res.cloudinary.com/dbmataac4/image/upload/v1616449383/workshop/people-3142549_1280.jpg"
+                  src="../images/workshop/people-3142549_1280.jpg"
                   className="img-fluid rounded-circle"
                   alt="..."
                 />
@@ -56,7 +56,7 @@ class HomeView extends Component {
             <div className="col-md-3">
               <Link to="/category" className="text-decoration-none">
                 <img
-                  src="https://res.cloudinary.com/dbmataac4/image/upload/v1616449255/workshop/pexels-lumn-322207.jpg"
+                  src="../images/workshop/pexels-lumn-322207.jpg"
                   className="img-fluid rounded-circle"
                   alt="..."
                 />
@@ -66,7 +66,7 @@ class HomeView extends Component {
             <div className="col-md-3">
               <Link to="/category" className="text-decoration-none">
                 <img
-                  src="https://res.cloudinary.com/dbmataac4/image/upload/v1616449724/workshop/pexels-jordan-hyde-1032110.jpg"
+                  src="../images/workshop/pexels-jordan-hyde-1032110.jpg"
                   className="img-fluid rounded-circle"
                   alt="..."
                 />
