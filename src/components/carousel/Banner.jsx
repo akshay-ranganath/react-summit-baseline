@@ -4,7 +4,7 @@ const Item = ({ item, index }) => (
   <div className={`carousel-item ${index === 0 ? 'active' : ''}`}>
 
     <video id='bgvideo' muted autoPlay loop playsInline>
-      <source src='../images/workshop/Woman Picking Out Clothes.mp4' type='video/mp4' />
+      <source src='../images/workshop/hero_video.mp4' type='video/mp4' />
   Your browser does not support the video tag.
     </video>
   </div>
